@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cssMemeSlider</title>
   <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <input type="radio" class="ctrl__item-input" name="r" id="r1" checked>
+    <input type="radio" class="ctrl__item-input" name="r" id="r2">
+    <input type="radio" class="ctrl__item-input" name="r" id="r3">
+    <input type="radio" class="ctrl__item-input" name="r" id="r4">
     <div class="slider">
       <!--  +++++++ slider__images-wrapper ++++++++++++ -->
       <div class="slider__images-wrapper">
@@ -36,39 +43,31 @@
               <div class="text__item">The dog wants to be friends ... I     do   not</div>
               <div class="text__item">Do you think you are smarter   than   me?  </div>
               <div class="text__item">Um, hi, remember me?</div>  
-              <!-- <label for="r1" class="text__item">Where is my dinner?</label>
-              <label for="r2" class="text__item">The dog wants to be friends ... I     do   not</label>
-              <label for="r3" class="text__item">Do you think you are smarter   than   me?  </label>
-              <label for="r4" class="text__item">Um, hi, remember me?</label>   -->
             </div> 
           </div>   
         </div>
         <!--  +++++++ slider__ctrl ++++++++++++ -->
         <div class="slider__ctrl">
-          <div class="ctrl__item">
-            <input type="radio" class="ctrl__item-input" name="r" id="r1">
+          <label class="ctrl__item" for='r1'>
             <span class="ctrl__circle">
-              <span class="ctrl__circle-checked"></span>
+              <span class="ctrl__circle-checked" id="ch1"></span>
             </span>  
-          </div>
-          <label for="r2" class="ctrl__item">
-            <input type="radio" class="ctrl__item-input" name="r" data-id="r2">
-            <span class="ctrl__circle" for='r2'>
+          </label>
+          <label for="r2" class="ctrl__item" for='r2'>
+            <span class="ctrl__circle">
               <span class="ctrl__circle-checked"></span>
             </span>  
           </label>
-          <div class="ctrl__item">
-            <input type="radio" class="ctrl__item-input" name="r" id="r3">
+          <label class="ctrl__item" for='r3'>
             <span class="ctrl__circle">
               <span class="ctrl__circle-checked"></span>
             </span>  
-          </div>
-          <div class="ctrl__item">
-            <input type="radio" class="ctrl__item-input" name="r" id="r4">
+          </label>
+          <label class="ctrl__item" for='r4'>
             <span class="ctrl__circle">
               <span class="ctrl__circle-checked"></span>
             </span>  
-          </div> 
+          </label> 
         </div>
         <!--  +++++++ slider__ctrl ENDS ++++++++++++ -->
       </div>

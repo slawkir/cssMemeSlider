@@ -10,7 +10,7 @@
   /* width: 100vw; */
   width: 100%;
   height: 100vh;
-  background: rgb(57, 54, 54);
+  background: #fff;
 
 }
 .slider {
@@ -22,12 +22,15 @@
   flex-direction: column;
   gap: 5rem;
   border: 2rem solid lightgreen;
+  border-radius: 5rem;
   padding-bottom: 10rem;
+   background: rgb(57, 54, 54);
 }
 .slider__images-wrapper{
   overflow: hidden;
   width: 100%;
   height: auto;
+  border-radius: 3rem;
 }
 .slider__images {
   display: flex;
@@ -48,27 +51,20 @@
 .wrapper {
   display: flex;
   width: 100%;
-  /* margin-bottom: 5rem; */
 }
 .slider__text {
   display: flex;
   align-items: center;
   width: 70%;
-  /* height: 100%; */
-  /* overflow: hidden; */
-  /* justify-content: flex-start; */
 }
 .slider__text-container {
-  /* display: flex; */
   align-items: center;
   overflow: hidden;
   vertical-align: middle;
-
 }
 .slider__text-wrapper {
   display: flex;
   width: 400%;
-  
   height: auto;
 }
 .text__item {
@@ -76,6 +72,8 @@
   color: white;
   font-size: 2.5rem;
   width: 250%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.2rem;
 }
 .slider__ctrl {
   width: 30%;
@@ -91,6 +89,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .ctrl__circle {
   display: flex;
   align-items: center;
@@ -101,44 +100,76 @@
   border-radius: 50%;
 }
 .ctrl__circle-checked {
-  opacity: 1;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: black;
+  border-radius: 50%;
+  opacity: 0;
 }
 .ctrl__item-input {
-  /* display: none; */
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  width: 3rem; 
-  height: 3rem; 
+  display: none;
 }
 .ctrl__circle:hover {
   background: white;
 }
-/* .ctrl__item:has(input:checked) .ctrl__circle-checked{
-  opacity: 1;
-  display: block;
-  height: 70px;
-  width: 70px;
-  background: black;
-  border-radius: 50%;
-} */
-/* .ctrl__item:has([id="r1"]:checked) .slider__images {
-  transform: translateX(-25%);
-} */
-
-/* #r2:checked ~ .slider__images {
-  /* transform: translateX(-25%); */
-  /* margin-left: -25%; */
-/* } */ 
-.slider:has([data-id="r2"]:checked)   .slider__images{
+.container:has([id="r1"]:checked)  .ctrl__item[for='r1'] > .ctrl__circle > .ctrl__circle-checked {
+    opacity: 1;
+} 
+.container:has([id="r1"]:checked)  .ctrl__item[for='r1'] > .ctrl__circle {
+    background: lightgreen;
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: blur(0.1rem);
+} 
+.container:has([id="r2"]:checked)  .ctrl__item[for='r2'] > .ctrl__circle > .ctrl__circle-checked {
+    opacity: 1;
+} 
+.container:has([id="r2"]:checked)  .ctrl__item[for='r2'] > .ctrl__circle {
+    background: lightgreen;
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: blur(0.1rem);
+} 
+.container:has([id="r3"]:checked)  .ctrl__item[for='r3'] > .ctrl__circle > .ctrl__circle-checked {
+    opacity: 1;
+} 
+.container:has([id="r3"]:checked)  .ctrl__item[for='r3'] > .ctrl__circle {
+    background: lightgreen;
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: blur(0.1rem);
+} 
+.container:has([id="r4"]:checked)  .ctrl__item[for='r4'] > .ctrl__circle > .ctrl__circle-checked {
+    opacity: 1;
+} 
+.container:has([id="r4"]:checked)  .ctrl__item[for='r4'] > .ctrl__circle {
+    background: lightgreen;
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: blur(0.1rem);
+} 
+.container:has([id="r1"]:checked) .slider__images{
+  transform: translateX(0);
+}
+.container:has([id="r1"]:checked) .slider__text-wrapper{
+  transform: translateX(0);
+}
+.container:has([id="r2"]:checked) .slider__images{
   transform: translateX(-25%);
 }
-
-
-.slider:has([data-id="r2"]:checked)  .slider__text-wrapper{
+.container:has([id="r2"]:checked) .slider__text-wrapper{
   transform: translateX(-25%);
 }
+.container:has([id="r3"]:checked) .slider__images{
+  transform: translateX(-50%);
+}
+.container:has([id="r3"]:checked) .slider__text-wrapper{
+  transform: translateX(-50%);
+}
+.container:has([id="r4"]:checked) .slider__images{
+  transform: translateX(-75%);
+}
+.container:has([id="r4"]:checked) .slider__text-wrapper{
+  transform: translateX(-75%);
+}
 
-/* .slider__text-wrapper */
-/* .slider:has([data-id="r2"]:checked) .slider__images-wrapper > .slider__images {
-  transform: translateX(-25%);
-} */
