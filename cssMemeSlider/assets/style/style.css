@@ -16,6 +16,14 @@ html {
   background: lightgray;
 
 }
+h1 {
+  /* display: block; */
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 .slider {
   padding: 3rem;
   max-width: 1440px;
@@ -23,6 +31,7 @@ html {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   border: 2rem solid lightgreen;
   border-radius: 5rem;
@@ -252,11 +261,17 @@ html {
   .slider {
     min-width: 500px;
   } 
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .slider {
     min-width: 320px;
   } 
+  h1 {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .slider {
