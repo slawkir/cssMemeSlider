@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssMemeSlider</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <input type="radio" class="ctrl__item-input" name="r" id="r1" checked>
+    <input type="radio" class="ctrl__item-input" name="r" id="r2">
+    <input type="radio" class="ctrl__item-input" name="r" id="r3">
+    <input type="radio" class="ctrl__item-input" name="r" id="r4">
+    <div class="slider">
+      <h1>
+      <a href="https://github.com/slawkir/cssMemeSlider/pull/1"> &raquo; Link to Pullrequest &laquo;</a>
+    </h1>
+      <!--  +++++++ slider__images-wrapper ++++++++++++ -->
+      <div class="slider__images-wrapper">
+        <div class="slider__images">
+          <div class="slider__img">
+            <img src="./assets/images/dinner.jpg" alt="memo">
+          </div>
+          <div class="slider__img">
+            <img src="./assets/images/friends.jpg" alt="memo">
+          </div>
+          <div class="slider__img">
+            <img src="./assets/images/smart.jpg" alt="memo">
+          </div>
+          <div class="slider__img">
+            <img src="./assets/images/remember.jpg" alt="memo">
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <!--  +++++++ slider__text ++++++++++++ -->
+        <div class="slider__text">
+          <div class="slider__text-container">
+            <div class="slider__text-wrapper">
+              <div class="text__item">Where is my dinner?</div>
+              <div class="text__item">The dog wants to be friends ... I     do   not</div>
+              <div class="text__item">Do you think you are smarter   than   me?  </div>
+              <div class="text__item">Um, hi, remember me?</div>  
+            </div> 
+          </div>   
+        </div>
+        <!--  +++++++ slider__ctrl ++++++++++++ -->
+        <div class="slider__ctrl">
+          <label class="ctrl__item" for='r1'>
+            <span class="ctrl__circle">
+              <span class="ctrl__circle-checked" id="ch1"></span>
+            </span>  
+          </label>
+          <label class="ctrl__item" for='r2'>
+            <span class="ctrl__circle">
+              <span class="ctrl__circle-checked"></span>
+            </span>  
+          </label>
+          <label class="ctrl__item" for='r3'>
+            <span class="ctrl__circle">
+              <span class="ctrl__circle-checked"></span>
+            </span>  
+          </label>
+          <label class="ctrl__item" for='r4'>
+            <span class="ctrl__circle">
+              <span class="ctrl__circle-checked"></span>
+            </span>  
+          </label> 
+        </div>
+        <!--  +++++++ slider__ctrl ENDS ++++++++++++ -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
